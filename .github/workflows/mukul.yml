@@ -16,4 +16,6 @@ jobs:
          First_Name: MK
          Message: I love AI
      run:|
-         echo $my_var $first_name $message.
+        run: |
+           echo $My_VAR $First_Name $Message
+
