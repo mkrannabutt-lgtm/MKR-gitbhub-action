@@ -1,4 +1,5 @@
 name: Rannabutt Workflows
+
 on:
   push:
     branches:
@@ -6,16 +7,15 @@ on:
       - 'releases/**'
 
 jobs:
-  My_first_workfows:
-   name: my first job
-   runs-on: self hosted
-   steps:
-    - name: Jai IT wale baba ki
-     env:
-         My_VAR: Hi there! My name is.
-         First_Name: MK
-         Message: I love AI
-     run:|
+  My_first_workflows:
+    name: my first job
+    runs-on: self-hosted
+    steps:
+      - name: Jai IT wale baba ki
+        env:
+          My_VAR: "Hi there! My name is."
+          First_Name: MK
+          Message: "I love AI"
         run: |
-           echo $My_VAR $First_Name $Message
+          echo $My_VAR $First_Name $Message
 
