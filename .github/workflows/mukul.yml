@@ -18,7 +18,7 @@ jobs:
           Message: "I love AI"
         run: |
           echo $My_VAR $First_Name $Message
-jobs:
+          
   My_Second_Workflow:
   name: Terraform basic command
   runs-on: self-hosted
