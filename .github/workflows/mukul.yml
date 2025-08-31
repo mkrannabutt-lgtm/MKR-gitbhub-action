@@ -18,5 +18,20 @@ jobs:
           Message: "I love AI"
         run: |
           echo $My_VAR $First_Name $Message
-          
-
+jobs:
+  My_Second_Workflow:
+  name: Terraform basic command
+  runs-on: self-hosted
+  steps:
+    - name: Terraform fmt
+      id: fmt
+      run: terraform fmt -check
+      continue-on-error: true
+    
+    - name: Terraform Init
+      id: init
+      run: terraform init -input=false
+    
+    - name: Terraform Validate
+      id: validate
+      run: terraform validate -no-color
