@@ -1,0 +1,37 @@
+name: Rannabutt Workflows
+
+on:
+  push:
+    branches:
+      - main
+      - 'releases/**'
+
+jobs:
+  My_first_workflows:
+    name: my first job
+    runs-on: self-hosted
+    steps:
+      - name: Jai IT wale baba ki
+        env:
+          My_VAR: "Hi there! My name is."
+          First_Name: MK
+          Message: "I love AI"
+        run: |
+          echo $My_VAR $First_Name $Message
+
+  My_Second_Workflow:
+    name: Terraform basic command
+    runs-on: self-hosted
+    steps:
+      - name: Terraform fmt
+        id: fmt
+        run: terraform fmt -check
+        continue-on-error: true
+
+      - name: Terraform Init
+        id: init
+        run: terraform init -input=false
+
+      - name: Terraform Validate
+        id: validate
+        run: terraform validate -no-colo
