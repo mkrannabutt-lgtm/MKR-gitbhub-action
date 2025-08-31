@@ -18,4 +18,5 @@ jobs:
           Message: "I love AI"
         run: |
           echo $My_VAR $First_Name $Message
+          
 
