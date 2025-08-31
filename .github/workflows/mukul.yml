@@ -34,4 +34,4 @@ jobs:
 
       - name: Terraform Validate
         id: validate
-        run: terraform validate -no-colo
+        run: terraform validate -no-color
