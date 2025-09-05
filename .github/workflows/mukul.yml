@@ -40,5 +40,14 @@ jobs:
         id: Plan
         run: terraform plan  - no-color -input=false
         continue-on-error: true
+        
+      - name: Azure login
+        uses: azure/login@v2
+        with:
+          auth-type: IDENTITY
+          tenant-id: ${{ e0eb0b0e-a455-477c-b0e8-56b7f7f4efb4 }}
+          subscription-id: ${{ 177b7e12-5f03-4f63-bcd1-ed6d1d776bff }}
+          enable-AzPSSession: true
+        
 
     
