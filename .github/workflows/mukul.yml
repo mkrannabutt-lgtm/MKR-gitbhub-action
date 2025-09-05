@@ -48,6 +48,7 @@ jobs:
           tenant-id: ${{ e0eb0b0e-a455-477c-b0e8-56b7f7f4efb4 }}
           subscription-id: ${{ 177b7e12-5f03-4f63-bcd1-ed6d1d776bff }}
           enable-AzPSSession: true
+          
         
 
     
